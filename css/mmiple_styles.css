@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, section, article {
+    font-family: 'Nunito', sans-serif;
+}
+.erreur{
+    color: red;
+}
+
+h1{
+   text-align: center;
+    border-radius: 8px;
+    height: 100px;
+    width: 300px;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 0;
+    height: 32px;
+    background-color: brown;
+    color: white;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header a {
+    color: white;
+}
+#panier_jeux.uk-badge {
+    color: white;
+    background-color: #1E87F0!important;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0px -37px 0px 0px;
+    padding: 0px 5px;
+    position: relative;
+    
+}
+
+#panier_jeux.uk-badge a {
+    text-decoration: none;
+}
+header a:hover {
+    color: white;
+    text-shadow: 1px 1px orange;
+}
+
+header a:active {
+    color: white;
+    text-shadow: 1px 1px yellow;
+}
+
+header a:visited {
+    color: white;
+}
+
+
+#connexion {
+    position: fixed;
+    right: 10px;
+}
+
+#contenu {
+    margin-top: 120px;
+    width: 98%;
+    display: grid;
+    gap: 2%;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+}
+#contenus{
+    margin-top: 120px;
+    width: 98%;
+}
+
+#logo {
+    position: fixed;
+    left: 10px;
+    top: 16px;
+    width: 64px;
+}
+
+.remarque {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.centre {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.imageDuJeu{
+    width: auto;
+    height: 150px;
+}
+.imageDuJeu, .unJeu, .editeurDuJeu, .dureeDuJeu, .ajout_panier{
+text-align: center;
+align-items: center;
+}
+   
+.unJeu a {
+    text-decoration: none;
+}
+.unJeu{
+    margin-left: auto;
+    margin-right: auto;
+    left: 30px;
+    border-radius: 7px;
+    border: solid 3px rgba(83, 83, 83, 0.616); 
+    width: 440px;
+    color: black;
+    
+
+}
+
+.unJeu:hover{
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+  ;
+  transition: 0.4s;
+  border: solid 3px brown;
+  }
+
+.nomDuJeu{
+    top: 10px;
+    left: 10px;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ajout_panier{
+margin-right: auto;
+margin-left: auto;
+background-color: brown;
+width: 200px;
+height: 40px;
+border-radius: 5px;
+}
+
+.ajout_panier a {
+    color: white;
+}
+.ajout_panier:hover{
+    background-color: #CC6666;
+    width: 200px;
+    height: 40px;
+}
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid brown; }
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:brown; }
+
+.fondRouge {
+    background-color: brown;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+   }
+
+.fondRouge a{
+    text-decoration: none;
+    color: white;
+}
+
+#tablePanier{
+    margin:auto;
+}
+
+
+td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
