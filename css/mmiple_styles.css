@@ -44,21 +44,11 @@ header nav {
 header a {
     color: white;
 }
-#panier_jeux.uk-badge {
-    color: white;
-    background-color: #1E87F0!important;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    margin: 0px -37px 0px 0px;
-    padding: 0px 5px;
-    position: relative;
-    
-}
 
-#panier_jeux.uk-badge a {
+.uk-badge a {
     text-decoration: none;
 }
+
 header a:hover {
     color: white;
     text-shadow: 1px 1px orange;
@@ -76,7 +66,7 @@ header a:visited {
 
 #connexion {
     position: fixed;
-    right: 10px;
+    right: -150px;
 }
 
 #contenu {
@@ -112,11 +102,17 @@ header a:visited {
 }
 
 
-.imageDuJeu{
-    width: auto;
-    height: 150px;
+
+#panier{
+    width: 10%;
+    margin-right: 7%;
 }
-.imageDuJeu, .unJeu, .editeurDuJeu, .dureeDuJeu, .ajout_panier{
+
+.imagesDuJeu img{
+    height: 150px;
+    width: auto;
+}
+.imagesDuJeu, .unJeu, .editeurDuJeu, .dureeDuJeu, .ajout_panier{
 text-align: center;
 align-items: center;
 }
@@ -176,54 +172,59 @@ border-radius: 5px;
     height: 40px;
 }
 
-form { max-width:420px; margin:50px auto; }
+input[type=text], [type=password], textarea {
+    width: 100%;
+    padding: 12px;
+    background: #f2f2f2;
+    border: solid 4px #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #161616;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 80px;
 
-.feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #CC6666;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
+  }
 
-.feedback-input:focus { border:2px solid brown; }
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#CC6666;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-[type="submit"]:hover { background:brown; }
-
+  label{
+      font-weight: bold;
+  }
 .fondRouge {
     background-color: brown;
     padding: 4px;
     border-radius: 4px;
     margin: 4px;
+    text-decoration: none;
+    color: #fff;
    }
 
 .fondRouge a{
-    text-decoration: none;
-    color: white;
+    color: #fff;
+}
+
+#commande{
+    display: flex;
+    justify-content: center;
 }
 
 #tablePanier{
@@ -242,4 +243,8 @@ th{
     text-align: left;
     background-color: brown;
     color: white;
+}
+
+.date{
+    margin-top: 10%;
 }
